@@ -1,0 +1,161 @@
+# Resume classification taxonomy -- version 1
+#
+# Closed, version-controlled class list. Every raw label found in a source
+# corpus must map to exactly one canonical class here, or the dataset build
+# fails. There is deliberately no catch-all "other" class: a heterogeneous
+# bucket has no coherent decision boundary and degrades a linear model.
+#
+# Canonical ids are snake_case, stable, and never reused. Changing an id is a
+# taxonomy version bump, not an edit.
+#
+# Derived from the label set of the LiveCareer resume corpus
+# (data/raw/livecareer_resumes/v1). These are *industry* categories, not job
+# titles: the corpus does not distinguish "Java Developer" from "DevOps
+# Engineer" -- both are INFORMATION-TECHNOLOGY.
+
+taxonomy_version = 1
+description = "Industry-level professional categories for resume classification."
+
+[[classes]]
+id = "accountant"
+display = "Accountant"
+description = "Bookkeeping, financial reporting, audit, tax preparation."
+source_labels = ["ACCOUNTANT"]
+
+[[classes]]
+id = "advocate"
+display = "Advocate / Legal"
+description = "Legal practice, litigation, counsel, paralegal work."
+source_labels = ["ADVOCATE"]
+
+[[classes]]
+id = "agriculture"
+display = "Agriculture"
+description = "Farming, agronomy, livestock, agricultural operations."
+source_labels = ["AGRICULTURE"]
+
+[[classes]]
+id = "apparel"
+display = "Apparel"
+description = "Garment production, fashion retail, textile merchandising."
+source_labels = ["APPAREL"]
+
+[[classes]]
+id = "arts"
+display = "Arts"
+description = "Fine arts, performing arts, creative production."
+source_labels = ["ARTS"]
+
+[[classes]]
+id = "automobile"
+display = "Automobile"
+description = "Vehicle maintenance, automotive sales and service."
+source_labels = ["AUTOMOBILE"]
+
+[[classes]]
+id = "aviation"
+display = "Aviation"
+description = "Flight operations, aircraft maintenance, airline services."
+source_labels = ["AVIATION"]
+
+[[classes]]
+id = "banking"
+display = "Banking"
+description = "Retail and commercial banking, lending, branch operations."
+source_labels = ["BANKING"]
+
+[[classes]]
+id = "business_development"
+display = "Business Development"
+description = "Partnerships, market expansion, strategic growth."
+source_labels = ["BUSINESS-DEVELOPMENT"]
+
+[[classes]]
+id = "business_process_outsourcing"
+display = "Business Process Outsourcing"
+description = "Outsourced contact centre and back-office operations."
+source_labels = ["BPO"]
+
+[[classes]]
+id = "chef"
+display = "Chef / Culinary"
+description = "Professional cooking, kitchen management, food preparation."
+source_labels = ["CHEF"]
+
+[[classes]]
+id = "construction"
+display = "Construction"
+description = "Building trades, site supervision, project construction."
+source_labels = ["CONSTRUCTION"]
+
+[[classes]]
+id = "consultant"
+display = "Consultant"
+description = "Advisory and consulting engagements across domains."
+source_labels = ["CONSULTANT"]
+
+[[classes]]
+id = "designer"
+display = "Designer"
+description = "Graphic, interior, product and visual design."
+source_labels = ["DESIGNER"]
+
+[[classes]]
+id = "digital_media"
+display = "Digital Media"
+description = "Social media, content production, digital marketing."
+source_labels = ["DIGITAL-MEDIA"]
+
+[[classes]]
+id = "engineering"
+display = "Engineering"
+description = "Mechanical, electrical, civil and industrial engineering."
+source_labels = ["ENGINEERING"]
+
+[[classes]]
+id = "finance"
+display = "Finance"
+description = "Financial analysis, treasury, investment, corporate finance."
+source_labels = ["FINANCE"]
+
+[[classes]]
+id = "fitness"
+display = "Fitness"
+description = "Personal training, coaching, health and wellness instruction."
+source_labels = ["FITNESS"]
+
+[[classes]]
+id = "healthcare"
+display = "Healthcare"
+description = "Clinical care, nursing, allied health, medical support."
+source_labels = ["HEALTHCARE"]
+
+[[classes]]
+id = "human_resources"
+display = "Human Resources"
+description = "Recruitment, employee relations, HR administration."
+source_labels = ["HR"]
+
+[[classes]]
+id = "information_technology"
+display = "Information Technology"
+description = "Software development, infrastructure, data, IT support."
+source_labels = ["INFORMATION-TECHNOLOGY"]
+
+[[classes]]
+id = "public_relations"
+display = "Public Relations"
+description = "Communications, media relations, brand reputation."
+source_labels = ["PUBLIC-RELATIONS"]
+
+[[classes]]
+id = "sales"
+display = "Sales"
+description = "Account management, territory sales, retail selling."
+source_labels = ["SALES"]
+
+[[classes]]
+id = "teacher"
+display = "Teacher / Education"
+description = "Classroom teaching, curriculum, educational instruction."
+source_labels = ["TEACHER"]

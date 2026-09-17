@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Resume Classifier{% endblock %}</title>
+  <style>
+    /* Functional styling only. Visual design is a later, separate pass. */
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+      margin: 0 auto;
+      max-width: 52rem;
+      padding: 2rem 1rem 4rem;
+    }
+    header { border-bottom: 1px solid currentColor; margin-bottom: 1.5rem; padding-bottom: .75rem; }
+    header h1 { font-size: 1.35rem; margin: 0 0 .25rem; }
+    .meta { font-size: .8rem; opacity: .7; }
+    fieldset { border: 1px solid currentColor; border-radius: 6px; margin: 0 0 1rem; padding: 1rem; }
+    legend { font-weight: 600; padding: 0 .4rem; }
+    label { display: block; font-weight: 600; margin-bottom: .35rem; }
+    input[type=file], textarea {
+      font: inherit; padding: .5rem; width: 100%;
+      border: 1px solid currentColor; border-radius: 4px; background: transparent; color: inherit;
+    }
+    textarea { min-height: 11rem; resize: vertical; }
+    button {
+      font: inherit; font-weight: 600; cursor: pointer;
+      padding: .6rem 1.4rem; border-radius: 4px;
+      border: 1px solid currentColor; background: transparent; color: inherit;
+    }
+    .hint { font-size: .85rem; opacity: .75; margin: .35rem 0 0; }
+    .verdict { border: 2px solid currentColor; border-radius: 6px; padding: 1rem; margin-bottom: 1.25rem; }
+    .verdict h2 { margin: 0 0 .35rem; font-size: 1.5rem; }
+    .verdict.uncertain { border-style: dashed; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 1.25rem; }
+    th, td { border-bottom: 1px solid currentColor; padding: .4rem .5rem; text-align: left; }
+    th { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; opacity: .75; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    ul.skills { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; margin: 0; padding: 0; }
+    ul.skills li { border: 1px solid currentColor; border-radius: 999px; font-size: .85rem; padding: .2rem .7rem; }
+    .warning { border-left: 4px solid currentColor; padding: .5rem .75rem; margin: .5rem 0; font-size: .9rem; }
+    footer { border-top: 1px solid currentColor; font-size: .8rem; margin-top: 2.5rem; opacity: .7; padding-top: .75rem; }
+    a { color: inherit; }
+    code { font-size: .85em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="/" style="text-decoration:none">Resume Classifier</a></h1>
+    <p class="meta">
+      Classical NLP and machine learning. No external AI service is used.
+      {% if model_version %} &middot; model <code>{{ model_version }}</code>{% endif %}
+    </p>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <footer>
+    <p>
+      Predictions come from a locally trained scikit-learn model.
+      Resume content is not stored by default &mdash; only a content hash and the outcome.
+    </p>
+  </footer>
+</body>
+</html>

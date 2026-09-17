@@ -1,0 +1,17 @@
+{
+  "declared_license": "mit",
+  "files": [
+    {
+      "bytes": 56273235,
+      "file": "Resume.csv",
+      "sha256": "816a7cd985a9a41e3ce8d1e83cb7e1beb1e854a89c1cf1fd0d75494faaa0559d",
+      "url": "https://huggingface.co/datasets/Darshan-04/Resume-classification/resolve/main/Resume.csv"
+    }
+  ],
+  "hub_repo": "https://huggingface.co/datasets/Darshan-04/Resume-classification",
+  "retrieval_method": "direct HTTPS download, no authentication, no API key",
+  "retrieved_at": "2026-09-16T15:27:45.091787+00:00",
+  "source": "livecareer_resumes",
+  "source_version": "v1",
+  "upstream_origin": "Mirror of the Kaggle dataset 'snehaanbhawal/resume-dataset', scraped from publicly published resume examples on livecareer.com. Contains real resume text: treat as personal data."
+}

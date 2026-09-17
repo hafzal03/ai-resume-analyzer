@@ -1,0 +1,74 @@
+# --- Python -------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# --- Virtual environments ----------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Secrets / local configuration -------------------------------------
+# Never commit a real .env; the template below is tracked deliberately.
+.env
+.env.*
+!.env.example
+
+# --- Tooling caches -----------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# --- Data ---------------------------------------------------------------
+# Corpora are never committed: size, third-party licensing, and the fact that
+# they contain real people's resumes. The MANIFEST files ARE committed, so
+# provenance stays under version control even though the bytes do not.
+#
+# Note the shape of these rules: git never descends into an excluded directory,
+# so each level must be re-included with a trailing-slash pattern before a file
+# inside it can be negated. A bare `!data/**/MANIFEST.json` silently does
+# nothing.
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/*/
+data/raw/*/*
+!data/raw/*/*/
+data/raw/*/*/*
+!data/raw/*/*/MANIFEST.json
+
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/*/
+data/processed/*/*
+!data/processed/*/MANIFEST.json
+!data/processed/*/report.md
+!data/processed/*/report.json
+
+# data/taxonomy/ is deliberately NOT ignored -- it is curated source of truth.
+
+# --- Model artifacts ----------------------------------------------------
+# Build outputs, reproducible from raw data + training code. The metadata
+# (metrics, provenance, hyperparameters) IS committed; the weights are not.
+models/*
+!models/.gitkeep
+!models/*/
+models/*/*
+!models/*/metadata.json
+
+# --- Logs ---------------------------------------------------------------
+*.log
+logs/
+
+# --- OS / editor --------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

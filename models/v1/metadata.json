@@ -1,0 +1,1592 @@
+{
+  "confidence": {
+    "margin": 0.1,
+    "report": {
+      "accuracy_gain": 0.0678,
+      "baseline_accuracy_all": 0.673,
+      "grid": [
+        {
+          "accuracy_on_answered": 0.673,
+          "coverage": 1.0,
+          "margin": 0.0,
+          "threshold": 0.0
+        },
+        {
+          "accuracy_on_answered": 0.7078,
+          "coverage": 0.8973,
+          "margin": 0.05,
+          "threshold": 0.0
+        },
+        {
+          "accuracy_on_answered": 0.7367,
+          "coverage": 0.8108,
+          "margin": 0.1,
+          "threshold": 0.0
+        },
+        {
+          "accuracy_on_answered": 0.7729,
+          "coverage": 0.7378,
+          "margin": 0.15,
+          "threshold": 0.0
+        },
+        {
+          "accuracy_on_answered": 0.7843,
+          "coverage": 0.6892,
+          "margin": 0.2,
+          "threshold": 0.0
+        },
+        {
+          "accuracy_on_answered": 0.702,
+          "coverage": 0.9432,
+          "margin": 0.0,
+          "threshold": 0.2
+        },
+        {
+          "accuracy_on_answered": 0.7214,
+          "coverage": 0.873,
+          "margin": 0.05,
+          "threshold": 0.2
+        },
+        {
+          "accuracy_on_answered": 0.7367,
+          "coverage": 0.8108,
+          "margin": 0.1,
+          "threshold": 0.2
+        },
+        {
+          "accuracy_on_answered": 0.7729,
+          "coverage": 0.7378,
+          "margin": 0.15,
+          "threshold": 0.2
+        },
+        {
+          "accuracy_on_answered": 0.7843,
+          "coverage": 0.6892,
+          "margin": 0.2,
+          "threshold": 0.2
+        },
+        {
+          "accuracy_on_answered": 0.7101,
+          "coverage": 0.9135,
+          "margin": 0.0,
+          "threshold": 0.25
+        },
+        {
+          "accuracy_on_answered": 0.7264,
+          "coverage": 0.8595,
+          "margin": 0.05,
+          "threshold": 0.25
+        },
+        {
+          "accuracy_on_answered": 0.7407,
+          "coverage": 0.8027,
+          "margin": 0.1,
+          "threshold": 0.25
+        },
+        {
+          "accuracy_on_answered": 0.7729,
+          "coverage": 0.7378,
+          "margin": 0.15,
+          "threshold": 0.25
+        },
+        {
+          "accuracy_on_answered": 0.7843,
+          "coverage": 0.6892,
+          "margin": 0.2,
+          "threshold": 0.25
+        },
+        {
+          "accuracy_on_answered": 0.7201,
+          "coverage": 0.8595,
+          "margin": 0.0,
+          "threshold": 0.3
+        },
+        {
+          "accuracy_on_answered": 0.7327,
+          "coverage": 0.8189,
+          "margin": 0.05,
+          "threshold": 0.3
+        },
+        {
+          "accuracy_on_answered": 0.7448,
+          "coverage": 0.7838,
+          "margin": 0.1,
+          "threshold": 0.3
+        },
+        {
+          "accuracy_on_answered": 0.7778,
+          "coverage": 0.7297,
+          "margin": 0.15,
+          "threshold": 0.3
+        },
+        {
+          "accuracy_on_answered": 0.7843,
+          "coverage": 0.6892,
+          "margin": 0.2,
+          "threshold": 0.3
+        },
+        {
+          "accuracy_on_answered": 0.7424,
+          "coverage": 0.7973,
+          "margin": 0.0,
+          "threshold": 0.35
+        },
+        {
+          "accuracy_on_answered": 0.7596,
+          "coverage": 0.7757,
+          "margin": 0.05,
+          "threshold": 0.35
+        },
+        {
+          "accuracy_on_answered": 0.7624,
+          "coverage": 0.7622,
+          "margin": 0.1,
+          "threshold": 0.35
+        },
+        {
+          "accuracy_on_answered": 0.7917,
+          "coverage": 0.7135,
+          "margin": 0.15,
+          "threshold": 0.35
+        },
+        {
+          "accuracy_on_answered": 0.7897,
+          "coverage": 0.6811,
+          "margin": 0.2,
+          "threshold": 0.35
+        },
+        {
+          "accuracy_on_answered": 0.7628,
+          "coverage": 0.7405,
+          "margin": 0.0,
+          "threshold": 0.4
+        },
+        {
+          "accuracy_on_answered": 0.777,
+          "coverage": 0.727,
+          "margin": 0.05,
+          "threshold": 0.4
+        },
+        {
+          "accuracy_on_answered": 0.7811,
+          "coverage": 0.7162,
+          "margin": 0.1,
+          "threshold": 0.4
+        },
+        {
+          "accuracy_on_answered": 0.8056,
+          "coverage": 0.6811,
+          "margin": 0.15,
+          "threshold": 0.4
+        },
+        {
+          "accuracy_on_answered": 0.8042,
+          "coverage": 0.6486,
+          "margin": 0.2,
+          "threshold": 0.4
+        },
+        {
+          "accuracy_on_answered": 0.8,
+          "coverage": 0.6622,
+          "margin": 0.0,
+          "threshold": 0.45
+        },
+        {
+          "accuracy_on_answered": 0.8,
+          "coverage": 0.6622,
+          "margin": 0.05,
+          "threshold": 0.45
+        },
+        {
+          "accuracy_on_answered": 0.7992,
+          "coverage": 0.6595,
+          "margin": 0.1,
+          "threshold": 0.45
+        },
+        {
+          "accuracy_on_answered": 0.8067,
+          "coverage": 0.6432,
+          "margin": 0.15,
+          "threshold": 0.45
+        },
+        {
+          "accuracy_on_answered": 0.8087,
+          "coverage": 0.6216,
+          "margin": 0.2,
+          "threshold": 0.45
+        },
+        {
+          "accuracy_on_answered": 0.819,
+          "coverage": 0.5973,
+          "margin": 0.0,
+          "threshold": 0.5
+        },
+        {
+          "accuracy_on_answered": 0.819,
+          "coverage": 0.5973,
+          "margin": 0.05,
+          "threshold": 0.5
+        },
+        {
+          "accuracy_on_answered": 0.819,
+          "coverage": 0.5973,
+          "margin": 0.1,
+          "threshold": 0.5
+        },
+        {
+          "accuracy_on_answered": 0.8182,
+          "coverage": 0.5946,
+          "margin": 0.15,
+          "threshold": 0.5
+        },
+        {
+          "accuracy_on_answered": 0.8194,
+          "coverage": 0.5838,
+          "margin": 0.2,
+          "threshold": 0.5
+        },
+        {
+          "accuracy_on_answered": 0.8307,
+          "coverage": 0.5108,
+          "margin": 0.0,
+          "threshold": 0.55
+        },
+        {
+          "accuracy_on_answered": 0.8307,
+          "coverage": 0.5108,
+          "margin": 0.05,
+          "threshold": 0.55
+        },
+        {
+          "accuracy_on_answered": 0.8307,
+          "coverage": 0.5108,
+          "margin": 0.1,
+          "threshold": 0.55
+        },
+        {
+          "accuracy_on_answered": 0.8307,
+          "coverage": 0.5108,
+          "margin": 0.15,
+          "threshold": 0.55
+        },
+        {
+          "accuracy_on_answered": 0.8307,
+          "coverage": 0.5108,
+          "margin": 0.2,
+          "threshold": 0.55
+        },
+        {
+          "accuracy_on_answered": 0.8701,
+          "coverage": 0.4162,
+          "margin": 0.0,
+          "threshold": 0.6
+        },
+        {
+          "accuracy_on_answered": 0.8701,
+          "coverage": 0.4162,
+          "margin": 0.05,
+          "threshold": 0.6
+        },
+        {
+          "accuracy_on_answered": 0.8701,
+          "coverage": 0.4162,
+          "margin": 0.1,
+          "threshold": 0.6
+        },
+        {
+          "accuracy_on_answered": 0.8701,
+          "coverage": 0.4162,
+          "margin": 0.15,
+          "threshold": 0.6
+        },
+        {
+          "accuracy_on_answered": 0.8701,
+          "coverage": 0.4162,
+          "margin": 0.2,
+          "threshold": 0.6
+        },
+        {
+          "accuracy_on_answered": 0.9082,
+          "coverage": 0.2649,
+          "margin": 0.0,
+          "threshold": 0.7
+        },
+        {
+          "accuracy_on_answered": 0.9082,
+          "coverage": 0.2649,
+          "margin": 0.05,
+          "threshold": 0.7
+        },
+        {
+          "accuracy_on_answered": 0.9082,
+          "coverage": 0.2649,
+          "margin": 0.1,
+          "threshold": 0.7
+        },
+        {
+          "accuracy_on_answered": 0.9082,
+          "coverage": 0.2649,
+          "margin": 0.15,
+          "threshold": 0.7
+        },
+        {
+          "accuracy_on_answered": 0.9082,
+          "coverage": 0.2649,
+          "margin": 0.2,
+          "threshold": 0.7
+        }
+      ],
+      "min_coverage": 0.8,
+      "selected": {
+        "accuracy_on_answered": 0.7407,
+        "coverage": 0.8027,
+        "margin": 0.1,
+        "threshold": 0.25
+      }
+    },
+    "threshold": 0.25,
+    "tuned_on": "validation"
+  },
+  "created_at": "2026-09-16T16:35:00.317811+00:00",
+  "dataset": {
+    "counts": {
+      "test": 371,
+      "train": 1727,
+      "validation": 370
+    },
+    "manifest_sha256": "c619d5b39698be12b8efff3fb2f744d45093248b2fc300df4dd1363488d5a70b",
+    "strip_header_chars": 0,
+    "version": "v1"
+  },
+  "git_commit": null,
+  "labels": [
+    "accountant",
+    "advocate",
+    "agriculture",
+    "apparel",
+    "arts",
+    "automobile",
+    "aviation",
+    "banking",
+    "business_development",
+    "business_process_outsourcing",
+    "chef",
+    "construction",
+    "consultant",
+    "designer",
+    "digital_media",
+    "engineering",
+    "finance",
+    "fitness",
+    "healthcare",
+    "human_resources",
+    "information_technology",
+    "public_relations",
+    "sales",
+    "teacher"
+  ],
+  "metrics": {
+    "test": {
+      "accuracy": 0.6199,
+      "macro_f1": 0.5731,
+      "per_class": {
+        "accountant": {
+          "f1": 0.5946,
+          "precision": 0.5789,
+          "recall": 0.6111,
+          "support": 18
+        },
+        "advocate": {
+          "f1": 0.4375,
+          "precision": 0.5,
+          "recall": 0.3889,
+          "support": 18
+        },
+        "agriculture": {
+          "f1": 0.5882,
+          "precision": 0.625,
+          "recall": 0.5556,
+          "support": 9
+        },
+        "apparel": {
+          "f1": 0.6429,
+          "precision": 0.6429,
+          "recall": 0.6429,
+          "support": 14
+        },
+        "arts": {
+          "f1": 0.2727,
+          "precision": 0.4286,
+          "recall": 0.2,
+          "support": 15
+        },
+        "automobile": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 5
+        },
+        "aviation": {
+          "f1": 0.9091,
+          "precision": 1.0,
+          "recall": 0.8333,
+          "support": 18
+        },
+        "banking": {
+          "f1": 0.4,
+          "precision": 0.4615,
+          "recall": 0.3529,
+          "support": 17
+        },
+        "business_development": {
+          "f1": 0.5143,
+          "precision": 0.5294,
+          "recall": 0.5,
+          "support": 18
+        },
+        "business_process_outsourcing": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 3
+        },
+        "chef": {
+          "f1": 0.8571,
+          "precision": 0.8824,
+          "recall": 0.8333,
+          "support": 18
+        },
+        "construction": {
+          "f1": 0.75,
+          "precision": 0.8,
+          "recall": 0.7059,
+          "support": 17
+        },
+        "consultant": {
+          "f1": 0.3529,
+          "precision": 0.3529,
+          "recall": 0.3529,
+          "support": 17
+        },
+        "designer": {
+          "f1": 0.8,
+          "precision": 0.8571,
+          "recall": 0.75,
+          "support": 16
+        },
+        "digital_media": {
+          "f1": 0.6875,
+          "precision": 0.6111,
+          "recall": 0.7857,
+          "support": 14
+        },
+        "engineering": {
+          "f1": 0.7568,
+          "precision": 0.7368,
+          "recall": 0.7778,
+          "support": 18
+        },
+        "finance": {
+          "f1": 0.5263,
+          "precision": 0.5,
+          "recall": 0.5556,
+          "support": 18
+        },
+        "fitness": {
+          "f1": 0.7273,
+          "precision": 0.8,
+          "recall": 0.6667,
+          "support": 18
+        },
+        "healthcare": {
+          "f1": 0.45,
+          "precision": 0.3913,
+          "recall": 0.5294,
+          "support": 17
+        },
+        "human_resources": {
+          "f1": 0.8205,
+          "precision": 0.7273,
+          "recall": 0.9412,
+          "support": 17
+        },
+        "information_technology": {
+          "f1": 0.5714,
+          "precision": 0.5,
+          "recall": 0.6667,
+          "support": 18
+        },
+        "public_relations": {
+          "f1": 0.6667,
+          "precision": 0.6471,
+          "recall": 0.6875,
+          "support": 16
+        },
+        "sales": {
+          "f1": 0.5789,
+          "precision": 0.5238,
+          "recall": 0.6471,
+          "support": 17
+        },
+        "teacher": {
+          "f1": 0.8485,
+          "precision": 0.7778,
+          "recall": 0.9333,
+          "support": 15
+        }
+      },
+      "weighted_f1": 0.6127,
+      "worst_class": "automobile",
+      "worst_class_f1": 0.0
+    },
+    "test_classification_report": "                              precision    recall  f1-score   support\n\n                  accountant      0.579     0.611     0.595        18\n                    advocate      0.500     0.389     0.438        18\n                 agriculture      0.625     0.556     0.588         9\n                     apparel      0.643     0.643     0.643        14\n                        arts      0.429     0.200     0.273        15\n                  automobile      0.000     0.000     0.000         5\n                    aviation      1.000     0.833     0.909        18\n                     banking      0.462     0.353     0.400        17\n        business_development      0.529     0.500     0.514        18\nbusiness_process_outsourcing      0.000     0.000     0.000         3\n                        chef      0.882     0.833     0.857        18\n                construction      0.800     0.706     0.750        17\n                  consultant      0.353     0.353     0.353        17\n                    designer      0.857     0.750     0.800        16\n               digital_media      0.611     0.786     0.688        14\n                 engineering      0.737     0.778     0.757        18\n                     finance      0.500     0.556     0.526        18\n                     fitness      0.800     0.667     0.727        18\n                  healthcare      0.391     0.529     0.450        17\n             human_resources      0.727     0.941     0.821        17\n      information_technology      0.500     0.667     0.571        18\n            public_relations      0.647     0.688     0.667        16\n                       sales      0.524     0.647     0.579        17\n                     teacher      0.778     0.933     0.848        15\n\n                    accuracy                          0.620       371\n                   macro avg      0.578     0.580     0.573       371\n                weighted avg      0.618     0.620     0.613       371\n",
+    "test_confusion_matrix": {
+      "accountant": {
+        "accountant": 11,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 1,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 5,
+        "fitness": 0,
+        "healthcare": 1,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "advocate": {
+        "accountant": 0,
+        "advocate": 7,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 1,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 1,
+        "business_development": 1,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 1,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 2,
+        "human_resources": 1,
+        "information_technology": 2,
+        "public_relations": 0,
+        "sales": 2,
+        "teacher": 0
+      },
+      "agriculture": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 5,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 1,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 1,
+        "fitness": 0,
+        "healthcare": 1,
+        "human_resources": 0,
+        "information_technology": 1,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "apparel": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 9,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 1,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 1,
+        "finance": 0,
+        "fitness": 1,
+        "healthcare": 0,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 1,
+        "sales": 1,
+        "teacher": 0
+      },
+      "arts": {
+        "accountant": 0,
+        "advocate": 1,
+        "agriculture": 0,
+        "apparel": 1,
+        "arts": 3,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 1,
+        "business_process_outsourcing": 0,
+        "chef": 1,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 1,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 1,
+        "human_resources": 1,
+        "information_technology": 1,
+        "public_relations": 1,
+        "sales": 1,
+        "teacher": 2
+      },
+      "automobile": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 1,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 1,
+        "consultant": 1,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 0,
+        "sales": 2,
+        "teacher": 0
+      },
+      "aviation": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 15,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 2,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 0,
+        "information_technology": 1,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "banking": {
+        "accountant": 1,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 2,
+        "automobile": 2,
+        "aviation": 0,
+        "banking": 6,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 1,
+        "designer": 0,
+        "digital_media": 1,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 1,
+        "healthcare": 0,
+        "human_resources": 1,
+        "information_technology": 2,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "business_development": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 1,
+        "business_development": 9,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 1,
+        "digital_media": 2,
+        "engineering": 1,
+        "finance": 2,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 1,
+        "information_technology": 0,
+        "public_relations": 1,
+        "sales": 0,
+        "teacher": 0
+      },
+      "business_process_outsourcing": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 1,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 1,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 1,
+        "information_technology": 0,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "chef": {
+        "accountant": 0,
+        "advocate": 1,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 15,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 1,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 1,
+        "sales": 0,
+        "teacher": 0
+      },
+      "construction": {
+        "accountant": 1,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 12,
+        "consultant": 1,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 1,
+        "healthcare": 1,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 0,
+        "sales": 1,
+        "teacher": 0
+      },
+      "consultant": {
+        "accountant": 1,
+        "advocate": 0,
+        "agriculture": 1,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 1,
+        "business_development": 1,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 6,
+        "designer": 0,
+        "digital_media": 2,
+        "engineering": 0,
+        "finance": 1,
+        "fitness": 0,
+        "healthcare": 1,
+        "human_resources": 0,
+        "information_technology": 1,
+        "public_relations": 1,
+        "sales": 1,
+        "teacher": 0
+      },
+      "designer": {
+        "accountant": 0,
+        "advocate": 1,
+        "agriculture": 0,
+        "apparel": 1,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 12,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 1,
+        "human_resources": 0,
+        "information_technology": 1,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "digital_media": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 1,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 11,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 1,
+        "sales": 1,
+        "teacher": 0
+      },
+      "engineering": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 1,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 14,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 0,
+        "information_technology": 2,
+        "public_relations": 0,
+        "sales": 1,
+        "teacher": 0
+      },
+      "finance": {
+        "accountant": 5,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 1,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 1,
+        "consultant": 1,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 10,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "fitness": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 1,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 1,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 1,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 12,
+        "healthcare": 1,
+        "human_resources": 1,
+        "information_technology": 0,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 1
+      },
+      "healthcare": {
+        "accountant": 0,
+        "advocate": 3,
+        "agriculture": 0,
+        "apparel": 1,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 3,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 9,
+        "human_resources": 0,
+        "information_technology": 1,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "human_resources": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 1,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 16,
+        "information_technology": 0,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "information_technology": {
+        "accountant": 0,
+        "advocate": 1,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 1,
+        "construction": 0,
+        "consultant": 2,
+        "designer": 1,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 1,
+        "human_resources": 0,
+        "information_technology": 12,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 0
+      },
+      "public_relations": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 1,
+        "apparel": 1,
+        "arts": 1,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 1,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 1,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 11,
+        "sales": 0,
+        "teacher": 0
+      },
+      "sales": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 1,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 1,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 0,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 3,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 0,
+        "sales": 11,
+        "teacher": 1
+      },
+      "teacher": {
+        "accountant": 0,
+        "advocate": 0,
+        "agriculture": 0,
+        "apparel": 0,
+        "arts": 0,
+        "automobile": 0,
+        "aviation": 0,
+        "banking": 0,
+        "business_development": 0,
+        "business_process_outsourcing": 0,
+        "chef": 0,
+        "construction": 0,
+        "consultant": 1,
+        "designer": 0,
+        "digital_media": 0,
+        "engineering": 0,
+        "finance": 0,
+        "fitness": 0,
+        "healthcare": 0,
+        "human_resources": 0,
+        "information_technology": 0,
+        "public_relations": 0,
+        "sales": 0,
+        "teacher": 14
+      }
+    },
+    "test_confusions": [
+      {
+        "count": 5,
+        "predicted": "finance",
+        "true": "accountant"
+      },
+      {
+        "count": 5,
+        "predicted": "accountant",
+        "true": "finance"
+      },
+      {
+        "count": 3,
+        "predicted": "advocate",
+        "true": "healthcare"
+      },
+      {
+        "count": 3,
+        "predicted": "consultant",
+        "true": "healthcare"
+      },
+      {
+        "count": 3,
+        "predicted": "healthcare",
+        "true": "sales"
+      },
+      {
+        "count": 2,
+        "predicted": "healthcare",
+        "true": "advocate"
+      },
+      {
+        "count": 2,
+        "predicted": "information_technology",
+        "true": "advocate"
+      },
+      {
+        "count": 2,
+        "predicted": "sales",
+        "true": "advocate"
+      },
+      {
+        "count": 2,
+        "predicted": "teacher",
+        "true": "arts"
+      },
+      {
+        "count": 2,
+        "predicted": "sales",
+        "true": "automobile"
+      },
+      {
+        "count": 2,
+        "predicted": "engineering",
+        "true": "aviation"
+      },
+      {
+        "count": 2,
+        "predicted": "arts",
+        "true": "banking"
+      }
+    ],
+    "test_coverage_curve": [
+      {
+        "accuracy_on_answered": 0.6199,
+        "answered": 371.0,
+        "coverage": 1.0,
+        "threshold": 0.0
+      },
+      {
+        "accuracy_on_answered": 0.6911,
+        "answered": 314.0,
+        "coverage": 0.8464,
+        "threshold": 0.3
+      },
+      {
+        "accuracy_on_answered": 0.7656,
+        "answered": 256.0,
+        "coverage": 0.69,
+        "threshold": 0.4
+      },
+      {
+        "accuracy_on_answered": 0.8291,
+        "answered": 199.0,
+        "coverage": 0.5364,
+        "threshold": 0.5
+      },
+      {
+        "accuracy_on_answered": 0.8865,
+        "answered": 141.0,
+        "coverage": 0.3801,
+        "threshold": 0.6
+      },
+      {
+        "accuracy_on_answered": 0.9529,
+        "answered": 85.0,
+        "coverage": 0.2291,
+        "threshold": 0.7
+      },
+      {
+        "accuracy_on_answered": 0.9615,
+        "answered": 26.0,
+        "coverage": 0.0701,
+        "threshold": 0.8
+      },
+      {
+        "accuracy_on_answered": 0.0,
+        "answered": 0.0,
+        "coverage": 0.0,
+        "threshold": 0.9
+      }
+    ],
+    "validation": {
+      "accuracy": 0.673,
+      "macro_f1": 0.6451,
+      "per_class": {
+        "accountant": {
+          "f1": 0.8947,
+          "precision": 0.8095,
+          "recall": 1.0,
+          "support": 17
+        },
+        "advocate": {
+          "f1": 0.75,
+          "precision": 0.8,
+          "recall": 0.7059,
+          "support": 17
+        },
+        "agriculture": {
+          "f1": 0.4444,
+          "precision": 0.5,
+          "recall": 0.4,
+          "support": 10
+        },
+        "apparel": {
+          "f1": 0.4444,
+          "precision": 0.5,
+          "recall": 0.4,
+          "support": 15
+        },
+        "arts": {
+          "f1": 0.4348,
+          "precision": 0.7143,
+          "recall": 0.3125,
+          "support": 16
+        },
+        "automobile": {
+          "f1": 0.5,
+          "precision": 1.0,
+          "recall": 0.3333,
+          "support": 6
+        },
+        "aviation": {
+          "f1": 0.7222,
+          "precision": 0.6842,
+          "recall": 0.7647,
+          "support": 17
+        },
+        "banking": {
+          "f1": 0.7368,
+          "precision": 0.6667,
+          "recall": 0.8235,
+          "support": 17
+        },
+        "business_development": {
+          "f1": 0.5405,
+          "precision": 0.5,
+          "recall": 0.5882,
+          "support": 17
+        },
+        "business_process_outsourcing": {
+          "f1": 0.3333,
+          "precision": 0.5,
+          "recall": 0.25,
+          "support": 4
+        },
+        "chef": {
+          "f1": 0.9091,
+          "precision": 0.9375,
+          "recall": 0.8824,
+          "support": 17
+        },
+        "construction": {
+          "f1": 0.9032,
+          "precision": 1.0,
+          "recall": 0.8235,
+          "support": 17
+        },
+        "consultant": {
+          "f1": 0.2759,
+          "precision": 0.3333,
+          "recall": 0.2353,
+          "support": 17
+        },
+        "designer": {
+          "f1": 0.8824,
+          "precision": 0.8333,
+          "recall": 0.9375,
+          "support": 16
+        },
+        "digital_media": {
+          "f1": 0.6452,
+          "precision": 0.625,
+          "recall": 0.6667,
+          "support": 15
+        },
+        "engineering": {
+          "f1": 0.7692,
+          "precision": 0.6818,
+          "recall": 0.8824,
+          "support": 17
+        },
+        "finance": {
+          "f1": 0.6857,
+          "precision": 0.6667,
+          "recall": 0.7059,
+          "support": 17
+        },
+        "fitness": {
+          "f1": 0.7333,
+          "precision": 0.8462,
+          "recall": 0.6471,
+          "support": 17
+        },
+        "healthcare": {
+          "f1": 0.6061,
+          "precision": 0.625,
+          "recall": 0.5882,
+          "support": 17
+        },
+        "human_resources": {
+          "f1": 0.6857,
+          "precision": 0.6316,
+          "recall": 0.75,
+          "support": 16
+        },
+        "information_technology": {
+          "f1": 0.65,
+          "precision": 0.5909,
+          "recall": 0.7222,
+          "support": 18
+        },
+        "public_relations": {
+          "f1": 0.875,
+          "precision": 0.9333,
+          "recall": 0.8235,
+          "support": 17
+        },
+        "sales": {
+          "f1": 0.3243,
+          "precision": 0.3,
+          "recall": 0.3529,
+          "support": 17
+        },
+        "teacher": {
+          "f1": 0.7368,
+          "precision": 0.6364,
+          "recall": 0.875,
+          "support": 16
+        }
+      },
+      "weighted_f1": 0.6649,
+      "worst_class": "consultant",
+      "worst_class_f1": 0.2759
+    }
+  },
+  "selected": {
+    "estimator": "linear_svc",
+    "features": {
+      "char_ngram_range": [
+        3,
+        5
+      ],
+      "max_df": 0.9,
+      "max_features": null,
+      "min_df": 2,
+      "name": "word_1gram",
+      "sublinear_tf": true,
+      "use_char_ngrams": false,
+      "word_ngram_max": 1
+    },
+    "hyperparameters": {
+      "classifier__estimator__C": 2.0,
+      "features__min_df": 3
+    }
+  },
+  "sklearn_version": "1.9.1",
+  "supports_probabilities": true,
+  "training": {
+    "baselines_cv_macro_f1": {
+      "baseline_majority": 0.0037,
+      "baseline_stratified": 0.0514
+    },
+    "cv_folds": 5,
+    "refinements": [
+      {
+        "baseline_cv_macro_f1": 0.6172,
+        "best_params": {
+          "classifier__estimator__C": 2.0,
+          "features__min_df": 3
+        },
+        "cv_macro_f1_mean": 0.6288,
+        "estimator": "linear_svc",
+        "features": "word_1gram"
+      },
+      {
+        "baseline_cv_macro_f1": 0.585,
+        "best_params": {
+          "classifier__C": 25.0,
+          "features__min_df": 2
+        },
+        "cv_macro_f1_mean": 0.599,
+        "estimator": "logistic_regression",
+        "features": "word_1gram"
+      }
+    ],
+    "search": [
+      {
+        "cv_macro_f1_mean": 0.0037,
+        "cv_macro_f1_std": 0.0,
+        "estimator": "baseline_majority",
+        "features": "word_1gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.0514,
+        "cv_macro_f1_std": 0.0062,
+        "estimator": "baseline_stratified",
+        "features": "word_1gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.4286,
+        "cv_macro_f1_std": 0.0099,
+        "estimator": "multinomial_nb",
+        "features": "word_1gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.4695,
+        "cv_macro_f1_std": 0.0174,
+        "estimator": "complement_nb",
+        "features": "word_1gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.585,
+        "cv_macro_f1_std": 0.0199,
+        "estimator": "logistic_regression",
+        "features": "word_1gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.6172,
+        "cv_macro_f1_std": 0.014,
+        "estimator": "linear_svc",
+        "features": "word_1gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.5617,
+        "cv_macro_f1_std": 0.0148,
+        "estimator": "sgd_modified_huber",
+        "features": "word_1gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.4313,
+        "cv_macro_f1_std": 0.0182,
+        "estimator": "multinomial_nb",
+        "features": "word_1_2gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.4784,
+        "cv_macro_f1_std": 0.0137,
+        "estimator": "complement_nb",
+        "features": "word_1_2gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.5804,
+        "cv_macro_f1_std": 0.0111,
+        "estimator": "logistic_regression",
+        "features": "word_1_2gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.6007,
+        "cv_macro_f1_std": 0.0141,
+        "estimator": "linear_svc",
+        "features": "word_1_2gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.5428,
+        "cv_macro_f1_std": 0.02,
+        "estimator": "sgd_modified_huber",
+        "features": "word_1_2gram"
+      },
+      {
+        "cv_macro_f1_mean": 0.4012,
+        "cv_macro_f1_std": 0.0087,
+        "estimator": "multinomial_nb",
+        "features": "word_1_2gram_char"
+      },
+      {
+        "cv_macro_f1_mean": 0.4576,
+        "cv_macro_f1_std": 0.013,
+        "estimator": "complement_nb",
+        "features": "word_1_2gram_char"
+      },
+      {
+        "cv_macro_f1_mean": 0.5889,
+        "cv_macro_f1_std": 0.0133,
+        "estimator": "logistic_regression",
+        "features": "word_1_2gram_char"
+      },
+      {
+        "cv_macro_f1_mean": 0.6172,
+        "cv_macro_f1_std": 0.0106,
+        "estimator": "linear_svc",
+        "features": "word_1_2gram_char"
+      },
+      {
+        "cv_macro_f1_mean": 0.5675,
+        "cv_macro_f1_std": 0.0193,
+        "estimator": "sgd_modified_huber",
+        "features": "word_1_2gram_char"
+      }
+    ],
+    "seed": 42
+  },
+  "version": "v1"
+}

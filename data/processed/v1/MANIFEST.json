@@ -1,0 +1,50 @@
+{
+  "built_at": "2026-09-16T14:57:53.551246+00:00",
+  "counts": {
+    "kept": 2468,
+    "quarantined": 16,
+    "read": 2484,
+    "test": 371,
+    "train": 1727,
+    "validation": 370
+  },
+  "dataset_version": "v1",
+  "git_commit": null,
+  "outputs": {
+    "corpus.jsonl": "d43ebcf6088eb17c759b4c77117faeea7268a66e8c72908ab8373ae76badd931",
+    "quarantine.jsonl": "b9d42617db4f58d5165a9f9428e84e24498e2f930b8fd4c27adc050bc080b51e",
+    "splits.json": "9525becfad7524253f9140310077465bcc349b47cdfaaf274e18e2ceefcbdda3"
+  },
+  "parameters": {
+    "min_resume_chars": 200,
+    "min_resume_words": 30,
+    "near_duplicate_threshold": 0.95,
+    "random_seed": 42,
+    "split_test": 0.15,
+    "split_train": 0.7,
+    "split_validation": 0.15
+  },
+  "source": {
+    "files": [
+      {
+        "file": "MANIFEST.json",
+        "sha256": "182c3944b966e045ceb01e594b648c2f127dac5520ad0d77efa4cf5cab0e385c"
+      },
+      {
+        "file": "README.md",
+        "sha256": "d8d7a46d41a1a37fe4f0a5f637bf55c649310185329127d8a2204632e480be17"
+      },
+      {
+        "file": "Resume.csv",
+        "sha256": "816a7cd985a9a41e3ce8d1e83cb7e1beb1e854a89c1cf1fd0d75494faaa0559d"
+      }
+    ],
+    "name": "livecareer_resumes",
+    "version": "v1"
+  },
+  "taxonomy": {
+    "class_count": 24,
+    "path": "data\\taxonomy\\categories_v1.toml",
+    "version": 1
+  }
+}

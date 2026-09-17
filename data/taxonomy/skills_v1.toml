@@ -1,0 +1,1104 @@
+# Skill taxonomy -- version 1
+#
+# Deterministic, controlled vocabulary for skill extraction. No model, no
+# inference, no external service: a skill is present iff one of its aliases
+# matches the normalised resume text.
+#
+# Curation method (reproducible):
+#   1. Mine discriminative unigrams and bigrams from the TRAIN split only
+#      (never validation or test -- mining the full corpus would leak test
+#      vocabulary into a feature the model can see).
+#   2. Keep terms that name a transferable, checkable capability: a tool, a
+#      technology, a technique, a certification, a professional method.
+#   3. Discard job titles, employer names, and generic filler.
+#   4. Group surface forms under one canonical id via `aliases`.
+#
+# Because the corpus spans 24 industries, this taxonomy is deliberately
+# multi-domain. An IT-only skill list would return nothing for two thirds of it.
+#
+# Aliases are matched against text that has already been through
+# `feature_normalize`, so they must be written in that form: lower case, with
+# "+", "#", "." and "-" preserved ("c++", "c#", "node.js", "back-end").
+
+taxonomy_version = 1
+description = "Multi-domain professional and technical skill vocabulary."
+
+# ===========================================================================
+# Programming languages
+# ===========================================================================
+[[skills]]
+id = "python"
+display = "Python"
+category = "programming_language"
+aliases = ["python"]
+
+[[skills]]
+id = "java"
+display = "Java"
+category = "programming_language"
+aliases = ["java"]
+
+[[skills]]
+id = "javascript"
+display = "JavaScript"
+category = "programming_language"
+aliases = ["javascript", "java script", "ecmascript", "es6"]
+
+[[skills]]
+id = "typescript"
+display = "TypeScript"
+category = "programming_language"
+aliases = ["typescript"]
+
+[[skills]]
+id = "c_language"
+display = "C"
+category = "programming_language"
+aliases = ["c programming", "ansi c"]
+
+[[skills]]
+id = "cpp"
+display = "C++"
+category = "programming_language"
+aliases = ["c++", "cpp"]
+
+[[skills]]
+id = "csharp"
+display = "C#"
+category = "programming_language"
+aliases = ["c#", "csharp"]
+
+[[skills]]
+id = "dotnet"
+display = ".NET"
+category = "programming_language"
+aliases = ["net framework", "asp.net", "vb.net", "dotnet"]
+
+[[skills]]
+id = "php"
+display = "PHP"
+category = "programming_language"
+aliases = ["php"]
+
+[[skills]]
+id = "ruby"
+display = "Ruby"
+category = "programming_language"
+aliases = ["ruby", "ruby on rails"]
+
+[[skills]]
+id = "go_language"
+display = "Go"
+category = "programming_language"
+aliases = ["golang"]
+
+[[skills]]
+id = "swift"
+display = "Swift"
+category = "programming_language"
+aliases = ["swift programming", "swift ios"]
+
+[[skills]]
+id = "kotlin"
+display = "Kotlin"
+category = "programming_language"
+aliases = ["kotlin"]
+
+[[skills]]
+id = "scala"
+display = "Scala"
+category = "programming_language"
+aliases = ["scala"]
+
+[[skills]]
+id = "perl"
+display = "Perl"
+category = "programming_language"
+aliases = ["perl"]
+
+[[skills]]
+id = "r_language"
+display = "R"
+category = "programming_language"
+aliases = ["r programming", "rstudio"]
+
+[[skills]]
+id = "matlab"
+display = "MATLAB"
+category = "programming_language"
+aliases = ["matlab", "simulink"]
+
+[[skills]]
+id = "shell_scripting"
+display = "Shell Scripting"
+category = "programming_language"
+aliases = ["shell scripting", "bash scripting", "powershell", "batch scripting"]
+
+[[skills]]
+id = "vba"
+display = "VBA"
+category = "programming_language"
+aliases = ["vba", "visual basic", "macros"]
+
+# ===========================================================================
+# Web and frontend
+# ===========================================================================
+[[skills]]
+id = "html"
+display = "HTML"
+category = "web"
+aliases = ["html", "html5"]
+
+[[skills]]
+id = "css"
+display = "CSS"
+category = "web"
+aliases = ["css", "css3", "sass", "scss"]
+
+[[skills]]
+id = "react"
+display = "React"
+category = "web"
+aliases = ["react", "react.js", "reactjs"]
+
+[[skills]]
+id = "angular"
+display = "Angular"
+category = "web"
+aliases = ["angular", "angularjs"]
+
+[[skills]]
+id = "vue"
+display = "Vue.js"
+category = "web"
+aliases = ["vue.js", "vuejs"]
+
+[[skills]]
+id = "nodejs"
+display = "Node.js"
+category = "web"
+aliases = ["node.js", "nodejs", "node js"]
+
+[[skills]]
+id = "jquery"
+display = "jQuery"
+category = "web"
+aliases = ["jquery"]
+
+[[skills]]
+id = "bootstrap"
+display = "Bootstrap"
+category = "web"
+aliases = ["bootstrap"]
+
+[[skills]]
+id = "wordpress"
+display = "WordPress"
+category = "web"
+aliases = ["wordpress"]
+
+[[skills]]
+id = "rest_api"
+display = "REST APIs"
+category = "web"
+aliases = ["rest api", "restful", "rest apis", "web services", "soap"]
+
+[[skills]]
+id = "django"
+display = "Django"
+category = "web"
+aliases = ["django"]
+
+[[skills]]
+id = "flask"
+display = "Flask"
+category = "web"
+aliases = ["flask"]
+
+[[skills]]
+id = "spring_framework"
+display = "Spring"
+category = "web"
+aliases = ["spring boot", "spring framework", "hibernate"]
+
+# ===========================================================================
+# Data and databases
+# ===========================================================================
+[[skills]]
+id = "sql"
+display = "SQL"
+category = "data"
+aliases = ["sql", "t-sql", "pl sql", "plsql"]
+
+[[skills]]
+id = "mysql"
+display = "MySQL"
+category = "data"
+aliases = ["mysql"]
+
+[[skills]]
+id = "postgresql"
+display = "PostgreSQL"
+category = "data"
+aliases = ["postgresql", "postgres"]
+
+[[skills]]
+id = "sql_server"
+display = "SQL Server"
+category = "data"
+aliases = ["sql server", "mssql", "ssrs", "ssis"]
+
+[[skills]]
+id = "oracle_db"
+display = "Oracle Database"
+category = "data"
+aliases = ["oracle database", "oracle db", "pl-sql"]
+
+[[skills]]
+id = "mongodb"
+display = "MongoDB"
+category = "data"
+aliases = ["mongodb", "nosql"]
+
+[[skills]]
+id = "data_analysis"
+display = "Data Analysis"
+category = "data"
+aliases = ["data analysis", "data analytics", "data analyst", "statistical analysis"]
+
+[[skills]]
+id = "data_visualization"
+display = "Data Visualisation"
+category = "data"
+aliases = ["data visualization", "data visualisation", "dashboards", "reporting tools"]
+
+[[skills]]
+id = "tableau"
+display = "Tableau"
+category = "data"
+aliases = ["tableau"]
+
+[[skills]]
+id = "power_bi"
+display = "Power BI"
+category = "data"
+aliases = ["power bi", "powerbi"]
+
+[[skills]]
+id = "machine_learning"
+display = "Machine Learning"
+category = "data"
+aliases = ["machine learning", "predictive modeling", "predictive modelling"]
+
+[[skills]]
+id = "etl"
+display = "ETL"
+category = "data"
+aliases = ["etl", "data warehousing", "data warehouse", "data pipeline"]
+
+[[skills]]
+id = "big_data"
+display = "Big Data"
+category = "data"
+aliases = ["hadoop", "spark", "big data", "hive"]
+
+# ===========================================================================
+# Cloud, infrastructure and operations
+# ===========================================================================
+[[skills]]
+id = "aws"
+display = "AWS"
+category = "cloud"
+aliases = ["aws", "amazon web services", "ec2", "s3"]
+
+[[skills]]
+id = "azure"
+display = "Microsoft Azure"
+category = "cloud"
+aliases = ["azure"]
+
+[[skills]]
+id = "gcp"
+display = "Google Cloud"
+category = "cloud"
+aliases = ["google cloud", "gcp"]
+
+[[skills]]
+id = "docker"
+display = "Docker"
+category = "cloud"
+aliases = ["docker", "containerization", "containerisation"]
+
+[[skills]]
+id = "kubernetes"
+display = "Kubernetes"
+category = "cloud"
+aliases = ["kubernetes", "k8s"]
+
+[[skills]]
+id = "linux"
+display = "Linux"
+category = "cloud"
+aliases = ["linux", "unix", "ubuntu", "red hat", "centos"]
+
+[[skills]]
+id = "windows_server"
+display = "Windows Server"
+category = "cloud"
+aliases = ["windows server", "active directory", "group policy"]
+
+[[skills]]
+id = "vmware"
+display = "VMware"
+category = "cloud"
+aliases = ["vmware", "virtualization", "virtualisation", "hyper-v"]
+
+[[skills]]
+id = "networking"
+display = "Networking"
+category = "cloud"
+aliases = ["tcp ip", "lan wan", "dns", "dhcp", "vpn", "firewall", "routers", "switches"]
+
+[[skills]]
+id = "cicd"
+display = "CI/CD"
+category = "cloud"
+aliases = ["ci cd", "jenkins", "continuous integration", "continuous delivery"]
+
+[[skills]]
+id = "git"
+display = "Git"
+category = "cloud"
+aliases = ["git", "github", "gitlab", "version control", "svn"]
+
+[[skills]]
+id = "cybersecurity"
+display = "Cybersecurity"
+category = "cloud"
+aliases = ["cyber security", "cybersecurity", "information security", "penetration testing", "vulnerability"]
+
+[[skills]]
+id = "itil"
+display = "ITIL"
+category = "cloud"
+aliases = ["itil", "service desk", "help desk", "ticketing system", "incident management"]
+
+# ===========================================================================
+# Software practice
+# ===========================================================================
+[[skills]]
+id = "agile"
+display = "Agile"
+category = "methodology"
+aliases = ["agile", "scrum", "kanban", "sprint planning"]
+
+[[skills]]
+id = "software_testing"
+display = "Software Testing"
+category = "methodology"
+aliases = ["software testing", "qa testing", "test cases", "unit testing", "automation testing", "selenium"]
+
+[[skills]]
+id = "sdlc"
+display = "SDLC"
+category = "methodology"
+aliases = ["sdlc", "software development life cycle", "waterfall"]
+
+# ===========================================================================
+# Finance and accounting
+# ===========================================================================
+[[skills]]
+id = "financial_reporting"
+display = "Financial Reporting"
+category = "finance"
+aliases = ["financial reporting", "financial statements", "balance sheet", "income statement", "p l"]
+
+[[skills]]
+id = "general_ledger"
+display = "General Ledger"
+category = "finance"
+aliases = ["general ledger", "journal entries", "trial balance", "reconciliations", "account reconciliation"]
+
+[[skills]]
+id = "accounts_payable"
+display = "Accounts Payable"
+category = "finance"
+aliases = ["accounts payable", "ap processing"]
+
+[[skills]]
+id = "accounts_receivable"
+display = "Accounts Receivable"
+category = "finance"
+aliases = ["accounts receivable", "ar processing", "collections"]
+
+[[skills]]
+id = "payroll"
+display = "Payroll"
+category = "finance"
+aliases = ["payroll", "payroll processing", "adp"]
+
+[[skills]]
+id = "taxation"
+display = "Taxation"
+category = "finance"
+aliases = ["tax preparation", "tax returns", "tax compliance", "sales tax"]
+
+[[skills]]
+id = "auditing"
+display = "Auditing"
+category = "finance"
+aliases = ["auditing", "internal audit", "external audit", "audit reports"]
+
+[[skills]]
+id = "budgeting"
+display = "Budgeting"
+category = "finance"
+aliases = ["budgeting", "budget management", "cost control", "variance analysis"]
+
+[[skills]]
+id = "forecasting"
+display = "Forecasting"
+category = "finance"
+aliases = ["forecasting", "financial forecasting", "financial modeling", "financial modelling"]
+
+[[skills]]
+id = "gaap"
+display = "GAAP"
+category = "finance"
+aliases = ["gaap", "ifrs", "sarbanes oxley", "sox compliance"]
+
+[[skills]]
+id = "quickbooks"
+display = "QuickBooks"
+category = "finance"
+aliases = ["quickbooks", "peachtree"]
+
+[[skills]]
+id = "sap"
+display = "SAP"
+category = "finance"
+aliases = ["sap", "erp system", "oracle financials"]
+
+[[skills]]
+id = "underwriting"
+display = "Underwriting"
+category = "finance"
+aliases = ["underwriting", "credit analysis", "loan origination", "mortgage lending"]
+
+[[skills]]
+id = "investment_management"
+display = "Investment Management"
+category = "finance"
+aliases = ["portfolio management", "investment management", "asset management", "wealth management"]
+
+# ===========================================================================
+# Healthcare and clinical
+# ===========================================================================
+[[skills]]
+id = "patient_care"
+display = "Patient Care"
+category = "healthcare"
+aliases = ["patient care", "direct patient care", "bedside care"]
+
+[[skills]]
+id = "nursing"
+display = "Nursing"
+category = "healthcare"
+aliases = ["registered nurse", "nursing care", "rn licensed", "lpn"]
+
+[[skills]]
+id = "medical_records"
+display = "Medical Records"
+category = "healthcare"
+aliases = ["medical records", "electronic health record", "ehr", "emr", "epic systems"]
+
+[[skills]]
+id = "medical_coding"
+display = "Medical Coding"
+category = "healthcare"
+aliases = ["medical coding", "icd numtoken", "cpt codes", "medical billing"]
+
+[[skills]]
+id = "hipaa"
+display = "HIPAA"
+category = "healthcare"
+aliases = ["hipaa"]
+
+[[skills]]
+id = "cpr_certified"
+display = "CPR / BLS"
+category = "healthcare"
+aliases = ["cpr certified", "bls certified", "basic life support", "acls"]
+
+[[skills]]
+id = "phlebotomy"
+display = "Phlebotomy"
+category = "healthcare"
+aliases = ["phlebotomy", "venipuncture", "specimen collection"]
+
+[[skills]]
+id = "pharmacology"
+display = "Pharmacology"
+category = "healthcare"
+aliases = ["pharmacology", "medication administration", "pharmacy technician"]
+
+[[skills]]
+id = "case_management"
+display = "Case Management"
+category = "healthcare"
+aliases = ["case management", "care coordination", "discharge planning"]
+
+# ===========================================================================
+# Legal
+# ===========================================================================
+[[skills]]
+id = "legal_research"
+display = "Legal Research"
+category = "legal"
+aliases = ["legal research", "westlaw", "lexisnexis", "case law"]
+
+[[skills]]
+id = "litigation"
+display = "Litigation"
+category = "legal"
+aliases = ["litigation", "trial preparation", "depositions", "discovery process"]
+
+[[skills]]
+id = "contract_law"
+display = "Contract Law"
+category = "legal"
+aliases = ["contract negotiation", "contract review", "contract drafting", "contract management"]
+
+[[skills]]
+id = "compliance"
+display = "Regulatory Compliance"
+category = "legal"
+aliases = ["regulatory compliance", "compliance management", "risk management", "due diligence"]
+
+[[skills]]
+id = "legal_documentation"
+display = "Legal Documentation"
+category = "legal"
+aliases = ["legal documents", "pleadings", "affidavits", "briefs"]
+
+# ===========================================================================
+# Culinary and hospitality
+# ===========================================================================
+[[skills]]
+id = "menu_development"
+display = "Menu Development"
+category = "culinary"
+aliases = ["menu development", "menu planning", "recipe development", "menu design"]
+
+[[skills]]
+id = "food_safety"
+display = "Food Safety"
+category = "culinary"
+aliases = ["food safety", "servsafe", "haccp", "sanitation standards", "food handling"]
+
+[[skills]]
+id = "kitchen_management"
+display = "Kitchen Management"
+category = "culinary"
+aliases = ["kitchen management", "kitchen operations", "line cook", "sous chef", "food preparation"]
+
+[[skills]]
+id = "catering"
+display = "Catering"
+category = "culinary"
+aliases = ["catering", "banquet", "event catering"]
+
+[[skills]]
+id = "inventory_control"
+display = "Inventory Control"
+category = "operations"
+aliases = ["inventory control", "inventory management", "stock control", "food cost"]
+
+# ===========================================================================
+# Aviation
+# ===========================================================================
+[[skills]]
+id = "aircraft_maintenance"
+display = "Aircraft Maintenance"
+category = "aviation"
+aliases = ["aircraft maintenance", "airframe", "avionics", "powerplant", "aircraft systems"]
+
+[[skills]]
+id = "flight_operations"
+display = "Flight Operations"
+category = "aviation"
+aliases = ["flight operations", "flight crew", "pilot in command", "flight planning"]
+
+[[skills]]
+id = "faa_regulations"
+display = "FAA Regulations"
+category = "aviation"
+aliases = ["faa regulations", "faa certified", "airworthiness"]
+
+[[skills]]
+id = "aviation_safety"
+display = "Aviation Safety"
+category = "aviation"
+aliases = ["aviation safety", "safety management system", "flight safety"]
+
+# ===========================================================================
+# Engineering and manufacturing
+# ===========================================================================
+[[skills]]
+id = "autocad"
+display = "AutoCAD"
+category = "engineering"
+aliases = ["autocad", "auto cad"]
+
+[[skills]]
+id = "solidworks"
+display = "SolidWorks"
+category = "engineering"
+aliases = ["solidworks", "solid works", "catia", "creo"]
+
+[[skills]]
+id = "cad_design"
+display = "CAD Design"
+category = "engineering"
+aliases = ["cad design", "cad drawings", "3d modeling", "3d modelling", "drafting"]
+
+[[skills]]
+id = "lean_manufacturing"
+display = "Lean Manufacturing"
+category = "engineering"
+aliases = ["lean manufacturing", "six sigma", "kaizen", "5s", "continuous improvement"]
+
+[[skills]]
+id = "quality_control"
+display = "Quality Control"
+category = "engineering"
+aliases = ["quality control", "quality assurance", "quality management", "iso numtoken"]
+
+[[skills]]
+id = "plc_programming"
+display = "PLC Programming"
+category = "engineering"
+aliases = ["plc programming", "plc", "scada", "automation systems"]
+
+[[skills]]
+id = "mechanical_design"
+display = "Mechanical Design"
+category = "engineering"
+aliases = ["mechanical design", "mechanical engineering", "thermodynamics", "fluid mechanics"]
+
+[[skills]]
+id = "electrical_systems"
+display = "Electrical Systems"
+category = "engineering"
+aliases = ["electrical systems", "electrical engineering", "circuit design", "wiring diagrams"]
+
+[[skills]]
+id = "troubleshooting"
+display = "Troubleshooting"
+category = "engineering"
+aliases = ["troubleshooting", "root cause analysis", "diagnostics", "fault finding"]
+
+# ===========================================================================
+# Construction
+# ===========================================================================
+[[skills]]
+id = "construction_management"
+display = "Construction Management"
+category = "construction"
+aliases = ["construction management", "site supervision", "site management", "general contractor"]
+
+[[skills]]
+id = "blueprint_reading"
+display = "Blueprint Reading"
+category = "construction"
+aliases = ["blueprint reading", "blueprints", "reading blueprints", "schematics"]
+
+[[skills]]
+id = "osha"
+display = "OSHA"
+category = "construction"
+aliases = ["osha", "osha numtoken", "safety compliance", "jobsite safety"]
+
+[[skills]]
+id = "cost_estimating"
+display = "Cost Estimating"
+category = "construction"
+aliases = ["cost estimating", "estimating", "takeoffs", "bid preparation"]
+
+[[skills]]
+id = "carpentry"
+display = "Carpentry"
+category = "construction"
+aliases = ["carpentry", "framing", "concrete", "masonry", "welding"]
+
+# ===========================================================================
+# Design and creative
+# ===========================================================================
+[[skills]]
+id = "adobe_photoshop"
+display = "Adobe Photoshop"
+category = "design"
+aliases = ["photoshop"]
+
+[[skills]]
+id = "adobe_illustrator"
+display = "Adobe Illustrator"
+category = "design"
+aliases = ["illustrator"]
+
+[[skills]]
+id = "adobe_indesign"
+display = "Adobe InDesign"
+category = "design"
+aliases = ["indesign"]
+
+[[skills]]
+id = "adobe_creative_suite"
+display = "Adobe Creative Suite"
+category = "design"
+aliases = ["adobe creative suite", "creative cloud", "adobe cs"]
+
+[[skills]]
+id = "graphic_design"
+display = "Graphic Design"
+category = "design"
+aliases = ["graphic design", "visual design", "layout design", "typography"]
+
+[[skills]]
+id = "interior_design"
+display = "Interior Design"
+category = "design"
+aliases = ["interior design", "space planning", "furniture selection"]
+
+[[skills]]
+id = "ux_ui"
+display = "UX / UI Design"
+category = "design"
+aliases = ["user experience", "ux design", "ui design", "wireframes", "prototyping"]
+
+[[skills]]
+id = "video_editing"
+display = "Video Editing"
+category = "design"
+aliases = ["video editing", "premiere pro", "after effects", "final cut"]
+
+[[skills]]
+id = "photography"
+display = "Photography"
+category = "design"
+aliases = ["photography", "photo editing", "studio lighting"]
+
+# ===========================================================================
+# Marketing, media and communications
+# ===========================================================================
+[[skills]]
+id = "social_media_marketing"
+display = "Social Media Marketing"
+category = "marketing"
+aliases = ["social media marketing", "social media management", "social media strategy", "facebook", "instagram", "twitter", "linkedin"]
+
+[[skills]]
+id = "seo"
+display = "SEO"
+category = "marketing"
+aliases = ["seo", "search engine optimization", "search engine optimisation", "sem"]
+
+[[skills]]
+id = "google_analytics"
+display = "Google Analytics"
+category = "marketing"
+aliases = ["google analytics", "google adwords", "google ads"]
+
+[[skills]]
+id = "content_marketing"
+display = "Content Marketing"
+category = "marketing"
+aliases = ["content marketing", "content strategy", "content creation", "copywriting", "blogging"]
+
+[[skills]]
+id = "email_marketing"
+display = "Email Marketing"
+category = "marketing"
+aliases = ["email marketing", "mailchimp", "email campaigns", "newsletters"]
+
+[[skills]]
+id = "brand_management"
+display = "Brand Management"
+category = "marketing"
+aliases = ["brand management", "brand strategy", "brand development", "brand awareness"]
+
+[[skills]]
+id = "public_relations_skill"
+display = "Public Relations"
+category = "marketing"
+aliases = ["public relations", "press releases", "media relations", "press kits"]
+
+[[skills]]
+id = "event_planning"
+display = "Event Planning"
+category = "marketing"
+aliases = ["event planning", "event management", "event coordination", "trade shows"]
+
+[[skills]]
+id = "market_research"
+display = "Market Research"
+category = "marketing"
+aliases = ["market research", "market analysis", "competitive analysis", "consumer insights"]
+
+[[skills]]
+id = "crm"
+display = "CRM"
+category = "marketing"
+aliases = ["salesforce", "crm software", "customer relationship management", "hubspot"]
+
+# ===========================================================================
+# Sales and retail
+# ===========================================================================
+[[skills]]
+id = "account_management"
+display = "Account Management"
+category = "sales"
+aliases = ["account management", "key accounts", "client relationship", "account executive"]
+
+[[skills]]
+id = "business_development_skill"
+display = "Business Development"
+category = "sales"
+aliases = ["business development", "new business development", "lead generation", "prospecting"]
+
+[[skills]]
+id = "negotiation"
+display = "Negotiation"
+category = "sales"
+aliases = ["negotiation", "negotiating contracts", "closing deals"]
+
+[[skills]]
+id = "customer_service"
+display = "Customer Service"
+category = "sales"
+aliases = ["customer service", "client service", "customer support", "customer satisfaction"]
+
+[[skills]]
+id = "merchandising"
+display = "Merchandising"
+category = "sales"
+aliases = ["merchandising", "visual merchandising", "product placement", "planograms"]
+
+[[skills]]
+id = "retail_operations"
+display = "Retail Operations"
+category = "sales"
+aliases = ["retail operations", "store operations", "pos system", "cash handling", "loss prevention"]
+
+[[skills]]
+id = "sales_forecasting"
+display = "Sales Forecasting"
+category = "sales"
+aliases = ["sales forecasting", "sales targets", "quota attainment", "pipeline management"]
+
+# ===========================================================================
+# Human resources
+# ===========================================================================
+[[skills]]
+id = "recruitment"
+display = "Recruitment"
+category = "hr"
+aliases = ["recruitment", "recruiting", "talent acquisition", "sourcing candidates", "applicant tracking"]
+
+[[skills]]
+id = "onboarding"
+display = "Onboarding"
+category = "hr"
+aliases = ["onboarding", "new hire orientation", "employee orientation"]
+
+[[skills]]
+id = "employee_relations"
+display = "Employee Relations"
+category = "hr"
+aliases = ["employee relations", "conflict resolution", "grievance handling", "disciplinary"]
+
+[[skills]]
+id = "benefits_administration"
+display = "Benefits Administration"
+category = "hr"
+aliases = ["benefits administration", "compensation and benefits", "open enrollment", "fmla"]
+
+[[skills]]
+id = "performance_management"
+display = "Performance Management"
+category = "hr"
+aliases = ["performance management", "performance reviews", "performance appraisals", "succession planning"]
+
+[[skills]]
+id = "hris"
+display = "HRIS"
+category = "hr"
+aliases = ["hris", "workday", "peoplesoft", "kronos"]
+
+[[skills]]
+id = "employment_law"
+display = "Employment Law"
+category = "hr"
+aliases = ["employment law", "labor law", "eeo", "ada compliance"]
+
+[[skills]]
+id = "training_development"
+display = "Training & Development"
+category = "hr"
+aliases = ["training and development", "employee training", "learning and development"]
+
+# ===========================================================================
+# Education
+# ===========================================================================
+[[skills]]
+id = "lesson_planning"
+display = "Lesson Planning"
+category = "education"
+aliases = ["lesson planning", "lesson plans", "instructional design"]
+
+[[skills]]
+id = "classroom_management"
+display = "Classroom Management"
+category = "education"
+aliases = ["classroom management", "behavior management", "student engagement"]
+
+[[skills]]
+id = "curriculum_design"
+display = "Curriculum Design"
+category = "education"
+aliases = ["curriculum design", "curriculum development", "common core", "state standards"]
+
+[[skills]]
+id = "student_assessment"
+display = "Student Assessment"
+category = "education"
+aliases = ["student assessment", "formative assessment", "standardized testing", "grading"]
+
+[[skills]]
+id = "special_education"
+display = "Special Education"
+category = "education"
+aliases = ["special education", "iep", "differentiated instruction", "individualized education"]
+
+# ===========================================================================
+# Agriculture
+# ===========================================================================
+[[skills]]
+id = "crop_management"
+display = "Crop Management"
+category = "agriculture"
+aliases = ["crop management", "crop production", "agronomy", "irrigation", "soil sampling"]
+
+[[skills]]
+id = "livestock_management"
+display = "Livestock Management"
+category = "agriculture"
+aliases = ["livestock", "animal husbandry", "herd management", "dairy operations"]
+
+[[skills]]
+id = "pest_management"
+display = "Pest Management"
+category = "agriculture"
+aliases = ["pest management", "pesticide application", "integrated pest management"]
+
+[[skills]]
+id = "environmental_compliance"
+display = "Environmental Compliance"
+category = "agriculture"
+aliases = ["environmental compliance", "natural resources", "conservation", "epa regulations"]
+
+# ===========================================================================
+# Automotive
+# ===========================================================================
+[[skills]]
+id = "vehicle_diagnostics"
+display = "Vehicle Diagnostics"
+category = "automotive"
+aliases = ["vehicle diagnostics", "automotive repair", "engine repair", "brake systems", "ase certified"]
+
+[[skills]]
+id = "claims_processing"
+display = "Claims Processing"
+category = "operations"
+aliases = ["claims processing", "claims handling", "insurance claims", "claims adjuster"]
+
+# ===========================================================================
+# Cross-cutting professional skills
+# ===========================================================================
+[[skills]]
+id = "project_management"
+display = "Project Management"
+category = "professional"
+aliases = ["project management", "project planning", "pmp certified", "ms project", "project coordination"]
+
+[[skills]]
+id = "team_leadership"
+display = "Team Leadership"
+category = "professional"
+aliases = ["team leadership", "team management", "staff supervision", "people management", "mentoring"]
+
+[[skills]]
+id = "strategic_planning"
+display = "Strategic Planning"
+category = "professional"
+aliases = ["strategic planning", "strategic development", "business strategy", "long term planning"]
+
+[[skills]]
+id = "process_improvement"
+display = "Process Improvement"
+category = "professional"
+aliases = ["process improvement", "process optimization", "process optimisation", "workflow improvement"]
+
+[[skills]]
+id = "vendor_management"
+display = "Vendor Management"
+category = "professional"
+aliases = ["vendor management", "supplier management", "procurement", "purchasing", "sourcing"]
+
+[[skills]]
+id = "supply_chain"
+display = "Supply Chain"
+category = "operations"
+aliases = ["supply chain", "logistics", "distribution", "warehouse management", "shipping and receiving"]
+
+[[skills]]
+id = "microsoft_office"
+display = "Microsoft Office"
+category = "professional"
+aliases = ["microsoft office", "ms office", "word excel", "microsoft word", "powerpoint", "outlook"]
+
+[[skills]]
+id = "microsoft_excel"
+display = "Microsoft Excel"
+category = "professional"
+aliases = ["excel", "pivot tables", "vlookup", "spreadsheets"]
+
+[[skills]]
+id = "technical_writing"
+display = "Technical Writing"
+category = "professional"
+aliases = ["technical writing", "documentation", "sop development", "standard operating procedures"]
+
+[[skills]]
+id = "public_speaking"
+display = "Public Speaking"
+category = "professional"
+aliases = ["public speaking", "presentations", "presentation skills"]
+
+[[skills]]
+id = "bilingual"
+display = "Bilingual"
+category = "professional"
+aliases = ["bilingual", "fluent in spanish", "multilingual", "translation"]
+
+[[skills]]
+id = "scheduling"
+display = "Scheduling"
+category = "professional"
+aliases = ["scheduling", "calendar management", "staff scheduling", "appointment scheduling"]
+
+[[skills]]
+id = "budget_administration"
+display = "Budget Administration"
+category = "professional"
+aliases = ["budget administration", "expense management", "cost reduction", "financial oversight"]

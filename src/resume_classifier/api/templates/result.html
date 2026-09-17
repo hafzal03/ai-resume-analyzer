@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Result &middot; Resume Classifier{% endblock %}
+
+{% block content %}
+<div class="verdict{% if result.is_uncertain %} uncertain{% endif %}">
+  <h2>{{ result.display_label }}</h2>
+  {% if result.is_uncertain %}
+    <p>
+      The model's best guess did not clear the confidence threshold, so no
+      category is being asserted. The ranked possibilities are below.
+    </p>
+  {% else %}
+    <p>
+      Confidence <strong>{{ '%.1f' % (result.confidence * 100) }}%</strong>
+      &middot; margin over runner-up {{ '%.1f' % (result.margin * 100) }} points
+    </p>
+  {% endif %}
+</div>
+
+{% for warning in result.warnings %}
+  <p class="warning">{{ warning }}</p>
+{% endfor %}
+
+<h3 style="font-size:1rem">Ranked categories</h3>
+<table>
+  <thead>
+    <tr><th>Category</th><th class="num">Probability</th></tr>
+  </thead>
+  <tbody>
+    {% for alternative in result.alternatives %}
+      <tr>
+        <td>{{ alternative.display }}</td>
+        <td class="num">{{ '%.1f' % (alternative.probability * 100) }}%</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3 style="font-size:1rem">Extracted skills ({{ result.skills | length }})</h3>
+{% if result.skills %}
+  <ul class="skills">
+    {% for skill in result.skills %}
+      <li title="{{ skill.category }} &middot; {{ skill.occurrences }} mention(s)">
+        {{ skill.display }}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="hint">No skills from the controlled vocabulary were found in this document.</p>
+{% endif %}
+
+<h3 style="font-size:1rem;margin-top:2rem">Document</h3>
+<table>
+  <tbody>
+    <tr><td>Characters</td><td class="num">{{ '{:,}'.format(result.text_char_count) }}</td></tr>
+    <tr><td>Words</td><td class="num">{{ '{:,}'.format(result.text_word_count) }}</td></tr>
+    {% if outcome.document %}
+      <tr><td>Pages</td><td class="num">{{ outcome.document.page_count }}</td></tr>
+      <tr><td>Pages with text</td><td class="num">{{ outcome.document.pages_with_text }}</td></tr>
+    {% endif %}
+    <tr><td>Model version</td><td class="num"><code>{{ result.model_version }}</code></td></tr>
+    <tr>
+      <td>Recorded in database</td>
+      <td class="num">{{ 'yes' if outcome.persisted else 'no' }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="/">&larr; Classify another</a></p>
+{% endblock %}

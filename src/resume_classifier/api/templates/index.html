@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Resume Classifier{% endblock %}
+
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Upload a resume</legend>
+    <label for="resume">PDF file</label>
+    <input type="file" id="resume" name="resume" accept="application/pdf,.pdf">
+    <p class="hint">
+      Text-based PDFs only. Scanned or image-only documents cannot be read, and
+      the system will say so rather than guessing.
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Or paste the text</legend>
+    <label for="resume_text">Resume text</label>
+    <textarea id="resume_text" name="resume_text"
+              placeholder="Paste the resume here if you do not have a PDF to hand."></textarea>
+    <p class="hint">Whichever you provide, the uploaded file takes precedence.</p>
+  </fieldset>
+
+  <button type="submit">Classify</button>
+</form>
+
+<h2 style="font-size:1rem;margin-top:2rem">What this does</h2>
+<p class="hint">
+  Predicts which of <strong>{{ category_count }}</strong> professional categories
+  best matches the document, and extracts recognised skills from a controlled
+  vocabulary of <strong>{{ skill_count }}</strong> entries. When the evidence is
+  weak the answer is <strong>Uncertain</strong> rather than a forced guess.
+</p>
+<p class="hint">
+  A JSON API is available at <code>POST /api/v1/classify</code> (multipart PDF)
+  and <code>POST /api/v1/classify/text</code> (JSON body). Model details:
+  <code>GET /api/v1/model</code>.
+</p>
+{% endblock %}

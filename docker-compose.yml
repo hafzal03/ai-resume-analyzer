@@ -1,0 +1,79 @@
+# Local/production-shaped stack.
+#
+# Security posture worth noting:
+#   * PostgreSQL is NOT published to the host. It is reachable only on the
+#     internal network, by service name.
+#   * Credentials come from the environment, with no defaults baked in, so the
+#     stack refuses to start rather than running on "postgres/postgres".
+#   * The database has a named volume, so data survives `docker compose down`.
+#   * The web service waits for a real Postgres healthcheck, not just container
+#     start.
+#   * Models and the corpus are bind-mounted read-only rather than baked in.
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?set POSTGRES_DB in .env}
+      POSTGRES_USER: ${POSTGRES_USER:?set POSTGRES_USER in .env}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_INITDB_ARGS: "--data-checksums"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    networks: [backend]
+
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      RC_DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+    volumes:
+      - ./alembic:/app/alembic:ro
+      - ./alembic.ini:/app/alembic.ini:ro
+    command: ["alembic", "upgrade", "head"]
+    restart: "no"
+    networks: [backend]
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    ports:
+      - "${COMPOSE_BIND_HOST:-127.0.0.1}:5000:5000"
+    environment:
+      RC_ENVIRONMENT: production
+      RC_DEBUG: "false"
+      RC_LOG_LEVEL: ${RC_LOG_LEVEL:-INFO}
+      RC_HOST: 0.0.0.0
+      RC_PORT: "5000"
+      RC_DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      RC_STORE_RESUME_TEXT: ${RC_STORE_RESUME_TEXT:-false}
+    volumes:
+      # Artifacts are produced outside the image and mounted read-only.
+      - ./models:/app/models:ro
+      - ./data/taxonomy:/app/data/taxonomy:ro
+    networks: [backend]
+
+volumes:
+  postgres_data:
+
+networks:
+  backend:
+    driver: bridge

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Problem &middot; Resume Classifier{% endblock %}
+
+{% block content %}
+<div class="verdict uncertain">
+  <h2>That did not work</h2>
+  <p>{{ message }}</p>
+</div>
+
+<p class="hint">
+  Error code <code>{{ code }}</code> &middot; reference <code>{{ request_id }}</code>
+</p>
+
+<p><a href="/">&larr; Try again</a></p>
+{% endblock %}
